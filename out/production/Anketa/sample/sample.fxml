@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="407.0" prefWidth="600.0">
+         <children>
+            <VBox layoutY="33.0" prefHeight="367.0" prefWidth="180.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1. Выберите курс" wrappingWidth="177.13671875" />
+                  <CheckBox mnemonicParsing="false" onAction="#presscheck" text="Java">
+                     <padding>
+                        <Insets top="40.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#presscheck" text="JavaScript">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#presscheck" text="Python">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#presscheck" text="C#">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#presscheck" text="C++">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <HBox layoutX="193.0" layoutY="41.0" prefHeight="86.0" prefWidth="408.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2. Укажите тип файла" wrappingWidth="123.13671875" />
+                  <RadioButton mnemonicParsing="false" onAction="#pressRadio" prefHeight="57.0" prefWidth="56.0" text="txt">
+                     <padding>
+                        <Insets right="30.0" top="40.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" onAction="#pressRadio" text="pdf">
+                     <padding>
+                        <Insets left="30.0" top="40.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" onAction="#pressRadio" text="docx">
+                     <padding>
+                        <Insets left="30.0" top="40.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox layoutX="193.0" layoutY="125.0" prefHeight="86.0" prefWidth="410.0">
+               <children>
+                  <TextField fx:id="nameFail" prefHeight="25.0" prefWidth="144.0">
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="pathFile">
+                     <HBox.margin>
+                        <Insets left="60.0" top="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Text layoutX="195.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 Введите название файла." wrappingWidth="177.13671875" />
+            <Text layoutX="373.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 Введите путь для сохранения файла" wrappingWidth="209.13671875" />
+            <Text layoutX="211.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" wrappingWidth="74.0" />
+            <Text layoutX="211.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия" wrappingWidth="74.0" />
+            <Text layoutX="211.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество" wrappingWidth="74.0" />
+            <TextField fx:id="name" layoutX="329.0" layoutY="213.0" />
+            <TextField fx:id="family" layoutX="329.0" layoutY="256.0" />
+            <TextField fx:id="otchestvo" layoutX="329.0" layoutY="297.0" />
+            <Button layoutX="321.0" layoutY="361.0" mnemonicParsing="false" onAction="#pressRegistr" prefHeight="25.0" prefWidth="123.0" text="Оформить заявку" />
+            <Text layoutX="96.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сформировать заявку записи на курс." textAlignment="CENTER" wrappingWidth="408.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="textWindow" layoutX="203.0" layoutY="334.0" prefHeight="17.0" prefWidth="157.0" text="Label" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
